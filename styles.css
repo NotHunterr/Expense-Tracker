@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+:root {
+  --lightgray: rgb(201, 197, 197);
+  --blue: #ff1423;
+}
+
 body,
 html {
   background: rgb(64, 62, 62);
@@ -7,16 +12,31 @@ html {
   padding: 0px;
 }
 
-.container {
+.title-container {
   display: flex;
   justify-content: center;
 }
 
-.container,
-.title {
+.starting_questions {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container > .title-container {
   font-family: 'Poppins';
   font-weight: 700;
-  color: rgb(201, 197, 197);
+  color: var(--lightgray);
   font-size: 1.5em;
   margin-top: 35px;
+}
+
+.container > .starting_questions {
+  font-size: 18px;
+  color: var(--lightgray);
+  font-family: 'Poppins';
+}
+
+.container > .starting_questions > label {
+  margin-right: 15px;
 }
