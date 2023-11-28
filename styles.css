@@ -41,7 +41,7 @@ html {
   margin-right: 15px;
 }
 
-.container > .starting_questions > .show_monthly {
+.show_monthly {
   font-size: 18px;
   color: var(--lightgray);
   font-family: 'Poppins';

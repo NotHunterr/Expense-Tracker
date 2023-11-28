@@ -13,14 +13,20 @@
       </div>
       <div class="starting_questions">
         <div class="monthly_or_yearly_questions">
-        <form id="form_questions">
+          <form id="form_questions">
           <label for="monthly">Monthly</label>
-          <input type="radio" id="monthly" name="monthly_or_yearly" onclick="showMonlthy()"/>
+          <input 
+          type="radio" 
+          id="monthly" 
+          name="monthly_or_yearly" 
+          onclick="showMonthly()"/>
+
           <label for="monthly">Yearly</label>
           <input
             type="radio"
             id="Yearly"
             name="monthly_or_yearly"
+            onclick="showYearly()"
           />
         </div>
         <div id="show_monthly">
@@ -32,6 +38,7 @@
           />
           <input type="submit" value="click here lol" />
         </div>
+        <div class="show_yearly">Just a test!</div>
         </form>
       </div>
     </div>
