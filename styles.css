@@ -40,10 +40,3 @@ html {
 .container > .starting_questions > label {
   margin-right: 15px;
 }
-
-.container > .starting_questions > .show_monthly {
-  font-size: 18px;
-  color: var(--lightgray);
-  font-family: 'Poppins';
-  display: none;
-}
