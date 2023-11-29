@@ -31,7 +31,7 @@ html {
   margin-top: 35px;
 }
 
-.container > .starting_questions {
+.container > .questions_container {
   font-size: 18px;
   color: var(--lightgray);
   font-family: 'Poppins';
