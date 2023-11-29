@@ -47,3 +47,11 @@ html {
   font-family: 'Poppins';
   display: none;
 }
+
+.monthly_div {
+  display: none;
+}
+
+.yearly_div {
+  display: none;
+}

@@ -3,43 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Expense Tracker</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="title-container">
-        <div class="title">Expense Tracker and Budgeter !!</div>
+        <div class="title">Expense Tracker and Budgeter</div>
       </div>
-      <div class="starting_questions">
+      <div class="questions_container">
         <div class="monthly_or_yearly_questions">
           <form id="form_questions">
-          <label for="monthly">Monthly</label>
-          <input 
-          type="radio" 
-          id="monthly" 
-          name="monthly_or_yearly" 
-          onclick="showMonthly()"/>
-
-          <label for="monthly">Yearly</label>
-          <input
-            type="radio"
-            id="Yearly"
-            name="monthly_or_yearly"
-            onclick="showYearly()"
-          />
-        
-        <div id="show_monthly">
-          <label for="monthly_income">Enter Monthly Income</label>
-          <input
-            type="number"
-            id="monthly_income"
-            placeholder="Enter monthly income"
-          />
-          <input type="submit" value="click here lol" />
+            <label for="monthly">Monthly</label>
+            <input
+              type="radio"
+              name="monthly_or_yearly"
+              id="monthly_radio"
+              autocomplete="off"
+              onclick="showMonthly()"
+            />
+            <label for="yearly">Yearly</label>
+            <input
+              type="radio"
+              name="monthly_or_yearly"
+              id="yearly_radio"
+              autocomplete="off"
+              onclick="showYearly()"
+            />
+            <div class="monthly_div">
+              <form id="monthly_questions">
+                <input
+                  type="number"
+                  placeholder="Enter number pls"
+                  id="show_monthly_income"
+                />
+                <input type="submit" value="click here lol" />
+              </form>
+            </div>
+            <div class="yearly_div">
+              <form id="yearly_questions">
+                <input
+                  type="number"
+                  id="show_yearly_income"
+                  placeholder="enter yearly number pls"
+                />
+                <input type="submit" value="clikc here yearly lol" />
+              </form>
+            </div>
+          </form>
         </div>
-        <div class="show_yearly">Just a test!</div>
-        </form>
       </div>
     </div>
   </body>

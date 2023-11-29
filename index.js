@@ -1,4 +1,6 @@
 let formQuestions = document.getElementById('form_questions')
+let monthlyDiv = document.querySelector('.monthly_div')
+let yearlyDiv = document.querySelector('.yearly_div')
 
 formQuestions.addEventListener('submit', (event) => {
   event.preventDefault()
@@ -7,6 +9,11 @@ formQuestions.addEventListener('submit', (event) => {
 })
 
 let showMonthly = () => {
-  let monthlyInput = document.getElementById('show_monthly')
-  monthlyInput.style.display = 'block'
+  monthlyDiv.style.display = 'block'
+  yearlyDiv.style.display = 'none'
+}
+
+let showYearly = () => {
+  monthlyDiv.style.display = 'none'
+  yearlyDiv.style.display = 'block'
 }
