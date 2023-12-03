@@ -40,7 +40,6 @@ html {
 .container > .starting_questions > label {
   margin-right: 15px;
 }
-
 .show_monthly {
   font-size: 18px;
   color: var(--lightgray);

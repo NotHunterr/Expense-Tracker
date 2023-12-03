@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debt Tracker</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      .debt-container {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Debt Tracker</h1>
+
+    <div id="debt-list">
+      <!-- Existing debt prompts will be appended here -->
+    </div>
+
+    <button onclick="addDebtPrompt()">Add Debt</button>
+
+    <script>
+      function addDebtPrompt() {
+        // Create a new div element
+        var debtContainer = document.createElement('div')
+        debtContainer.classList.add('debt-container')
+
+        // Create a prompt for debt input
+        var debtPrompt = prompt('Enter your debt amount:')
+
+        // Check if the user entered a value
+        if (debtPrompt !== null && debtPrompt.trim() !== '') {
+          // Create a new paragraph element to display the debt
+          var debtParagraph = document.createElement('p')
+          debtParagraph.textContent =
+            'Debt: $' + parseFloat(debtPrompt).toFixed(2)
+
+          // Append the paragraph to the container
+          debtContainer.appendChild(debtParagraph)
+
+          // Append the container to the debt-list div
+          document.getElementById('debt-list').appendChild(debtContainer)
+        } else {
+          alert('Please enter a valid debt amount.')
+        }
+      }
+    </script>
+  </body>
+</html>
