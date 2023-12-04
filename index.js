@@ -30,23 +30,6 @@ let showYearly = () => {
 const numOfDebts = document.querySelector('.debt-questions')
 const getNewDebts = document.querySelector('.num-of-debts-container')
 
-/* STEPS TO ADDING THIS: 
-    CREATE A NEW DIV
-    ADD DESIRED TEXT TO DIV
-    ALLOW USER TO ADD THEIR DEBTS
-      BE ABLE TO TRACK THE DEBT THAT THEY ADDED
-      STORE MMP, INTEREST, AMOUNT AS AN OBJECT IN ARRAY
-      BE ABLE TO ADD THE INPUTS INTO THE OBJECT
-      THEN PARSE THROUGH THE DATA TO FIND MOST/LEAST IMPORTANT!!! :D
-    ALLOW USER TO DELETE A DEBT.  
-*/
-
-// const fnAddDebt = () => {
-//   const newDiv = document.createElement('div')
-//   newDiv.appendChild(document.createTextNode('Hello'))
-//   numOfDebts.innerHTML += 'Hello'
-// }
-
 debtSubmit = document.getElementById('submit-btn')
 let debtObj = []
 let debtNum = 1
@@ -72,6 +55,12 @@ debtSubmit.addEventListener('click', (e) => {
   debtObj.push(newDebtObject)
   console.log(debtObj)
 
+  // Resetting input fields for a second debt.
+  debtAmountInput.value = ''
+  interestAmountInput.value = ''
+  mmpAmountInput.value = ''
+
+  // Alerting users that the input has been successful
   if (debtNum == 1) {
     alert('You have inserted a debt. If you have more, please keep inputting.')
     debtNum++
@@ -82,10 +71,11 @@ debtSubmit.addEventListener('click', (e) => {
     debtNum++
   }
 
-  // Resetting input fields for a second debt.
-  debtAmountInput.value = ''
-  interestAmountInput.value = ''
-  mmpAmountInput.value = ''
-
   //Display current objects as a test!
+
+  /* TO MAKE THIS HAPPEN
+    - LOOP THROUGH THE ARRAY OF THE OBJECTS
+    - DISPLAY THE OBJECTS IN THE ARRAY.  */
 })
+
+// let's create a function to do this!
