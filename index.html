@@ -60,7 +60,21 @@
           <button type="button" onclick="fnAddDebt()">
             Click here to Add debt
           </button>
-          <div class="num-of-debts"></div>
+          <div class="num-of-debts-container">
+            <input type="number" id="debt-amount" placeholder="Debt amount" />
+            <input
+              type="number"
+              id="interest-amount"
+              placeholder="Interest amount"
+            />
+            <input
+              type="number"
+              id="min-monthly-payment"
+              placeholder="Minimum monthly payment"
+            />
+            <button type="submit" id="submit-btn">Submit Debt</button>
+            <div class="current-inputted-debts"><br /><br />Hello!</div>
+          </div>
         </div>
       </div>
     </div>
